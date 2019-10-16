@@ -1,6 +1,6 @@
 'use strict'
 
-// sam local start-api
+// sam local start-api --port 3030
 module.exports.handler = async (event) => {  
     const { body } = event
     return {
