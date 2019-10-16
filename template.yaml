@@ -12,3 +12,15 @@ Resources:
             Cors: '*'
             Path: /
             Method: POST
+  Test:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.test
+      Runtime: nodejs10.x
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Cors: '*'
+            Path: /test
+            Method: GET
